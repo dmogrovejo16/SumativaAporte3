@@ -1,20 +1,83 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<app-nav-bar titulo="Diario el Clarín">
+
+</app-nav-bar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <app-news-card 
+        NewsDescription="A dia de hoy puede ir a la Comic-Con en San Francisco y tomarte un par de fotos con spiderman, no te pierdas esta oportunidad"
+        imagen="https://upload.wikimedia.org/wikipedia/commons/5/52/Spider-Man.jpg" 
+        NewsName="Spiderman en la Comic-Con">
+        </app-news-card>
+      </ion-col>
+      <ion-col>
+        <app-news-card 
+        NewsDescription="Estrenada en 2023, Spiderman Across The Spiderverse se ha convertido en una hazaña taquillera al igual que su precuela, ingresa aquí para ver sus sinopsis"
+        imagen="https://media.primicias.ec/2023/06/02112426/across.jpg" 
+        NewsName="La mejor pelicula animada de la decada">
+        </app-news-card>
+      </ion-col>
+      <ion-col>
+        <app-news-card 
+        NewsDescription="Estrenada en 2023, Spiderman Across The Spiderverse se ha convertido en una hazaña taquillera al igual que su precuela, ingresa aquí para ver sus sinopsis"
+        imagen="https://img2.rtve.es/i/?w=1600&i=1442912664626.jpg" 
+        NewsName="Revisa las nuevas noticias de spiderman">
+        </app-news-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+<div class="cont">
+  <ion-button color="secondary" shape="round" position="center" href="https://www.clarin.com/">
+    Ver mas
+    <ion-icon slot="end" name="add-outline"></ion-icon>
+  </ion-button>
+<ion-button color="danger" shape="round" position="center">
+  Ir a la siguiente pagina
+  <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+</ion-button>
+
+<ion-button expand="block" class="btn" color="warning" fill="solid" shape="round" position="center">Encuentranos en</ion-button>
+
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #map {
+      width: 50%;
+      height: 5rem; 
+  }
+
+  footer {
+      background-color: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+  }
+</style>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4073178.374970547!2d-81.35653337437046!3d-4.464311309630412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902cd7e06a940395%3A0xeb4be8b7961c5374!2sDiario%20El%20Clar%C3%ADn!5e0!3m2!1ses!2sec!4v1704904616973!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>  
+
+
+
+
 </ion-content>

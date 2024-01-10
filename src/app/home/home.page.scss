@@ -8,6 +8,15 @@
   transform: translateY(-50%);
 }
 
+.btn{
+  margin-top: 3rem;
+}
+
+ion-content {
+  --background: url('https://thumbs.dreamstime.com/b/fondo-rasgado-del-peri%C3%B3dico-cierre-para-arriba-141598616.jpg') center center fixed;
+  background-size: cover;
+}
+
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -20,6 +29,19 @@
   color: #8c8c8c;
 
   margin: 0;
+}
+
+.txt{
+  font-size: 2rem;
+  color: rgb(251, 255, 0);
+  font-family: 'Oswald', sans-serif;
+}
+
+.cont{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #container a {

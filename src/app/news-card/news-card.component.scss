@@ -1,0 +1,15 @@
+.img{
+    width: 20rem;
+}
+.card{
+    width: 20rem;
+    height: 22rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    /* Estilos para pantallas con ancho máximo de 600px */
+    .img{
+        width: 200px;
+    }
+    }
