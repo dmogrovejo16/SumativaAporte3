@@ -7,9 +7,30 @@
     margin: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-    /* Estilos para pantallas con ancho máximo de 600px */
+@media screen and (max-width: 576px) {
     .img{
         width: 200px;
     }
     }
+
+    @media screen and (min-width:577px) and (max-width: 992px) {
+        .img{
+            width: 20rem;
+        }
+        .card{
+            width: 25rem;
+            height: 22rem;
+            margin: 1rem;
+        }
+        }
+
+        @media screen and (min-width:993px)  {
+            .img{
+                width: 15rem;
+            }
+            .card{
+                width: 15rem;
+                height: 22rem;
+                margin: 1rem;
+            }
+            }
